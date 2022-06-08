@@ -1,0 +1,181 @@
+.mainContainer{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainBtnContainer{
+    text-align: right;
+}
+
+.mainBtnContainer button{
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.mainBtnContainer button:first-child{
+    margin-right: 5px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    margin: auto;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    width: 24%;
+    height: 100%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.card:first-child{
+    margin-left: 1%;
+}
+
+.card:last-child{
+    margin-right: 0;
+}
+
+.card p{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card h4{
+    margin-bottom: 15px;
+}
+
+.card h4 span{
+    font-weight: 400;
+}
+
+.card img{
+    max-width: 100%;
+    transition: .2s;
+}
+
+.card .btnContainer{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .btn{
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.card .btn img{
+    margin-left: 10px;
+}
+
+.card .btn span{
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+.sliderCircles{
+    display: none;
+}
+
+.filterBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.filterBar div:first-child{
+    width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainContainer{
+        width: 90%;
+    }
+
+    .slider {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 0;
+        white-space: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        margin: auto;
+    }
+
+    .card{
+        width: 80%;
+        height: 100%;
+        display: inline-block;
+        margin-right: 5%;
+    }
+    
+    .card:first-child{
+        margin-left: 1%;
+    }
+    
+    .card:last-child{
+        margin-right: 0;
+    }
+
+    .mainBtnContainer{
+        display: none;
+    }
+
+    .sliderCircles{
+        display: block;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;;
+        margin-top: 20px;
+    }
+
+    .sliderCircles img{
+        width: 12px;
+        float: left;
+        margin: 0 3px;
+    }
+
+    .filterBar{
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+    }
+    
+    .filterBar div:first-child{
+        width: 100%;
+    }
+}

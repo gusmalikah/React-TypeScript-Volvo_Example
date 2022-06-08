@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Volvo Novum';
+  src: url(../../src/resources/fonts/Volvo\ Novum/Volvo\ Novum-Regular.woff);
+  src: url(../../src/resources/fonts/Volvo\ Novum/Volvo\ Novum-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Volvo Novum';
+  src: url(../../src/resources/fonts/Volvo\ Novum/Volvo\ Novum-Medium.woff);
+  src: url(../../src/resources/fonts/Volvo\ Novum/Volvo\ Novum-Medium.woff2);
+  font-weight: 600;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: 'Volvo Novum', sans-serif;
+}
