@@ -70,7 +70,7 @@ const DisplaySlider = ({ cars }: { cars: Array<Car> }) => {
       <div className={styles.mainBtnContainer}>
         <button onClick={previous}>
           <img
-            style={{ transform: "rotate(180deg)" }}
+           style={{ transform: "rotate(180deg)" }}
             width="40"
             alt="previous-slide"
             src="/images/chevron-circled.svg"
@@ -82,7 +82,7 @@ const DisplaySlider = ({ cars }: { cars: Array<Car> }) => {
       </div>
       {/* rendering the circles that showcase current slide position*/}
       <div className={styles.sliderCircles}>
-        {cars.map((car, i) => {
+        {displayedCars.map((car, i) => {
           let img = <img key={i} src="/images/inactive_circle.svg"/>;
           if(i === currentSlide){
             img = <img key={i} src="/images/active_circle.svg"/>;
